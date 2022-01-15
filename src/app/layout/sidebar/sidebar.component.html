@@ -1,0 +1,30 @@
+<mat-nav-list>
+    <a routerLink="/" mat-list-item>
+        <mat-icon mat-list-icon>home</mat-icon>Home
+    </a>
+    <a href="/entries" mat-list-item>
+        <mat-icon mat-list-icon>assignment</mat-icon>Entry
+    </a>
+    <a [routerLink]="'/customers'" mat-list-item>
+        <mat-icon mat-list-icon>supervisor_account</mat-icon>Customer
+    </a>
+    <a [routerLink]="'/enquiries'" mat-list-item>
+        <mat-icon mat-list-icon>list</mat-icon>Enquiries
+    </a>
+    <!-- Transaction Menu   -->
+    <a mat-list-item (click)="toggleMenu()">
+        <mat-icon mat-list-icon>business</mat-icon>Menu Item 3
+        <mat-icon *ngIf="!showMenu">chevron_right</mat-icon>
+        <mat-icon *ngIf="showMenu">expand_more</mat-icon>
+    </a>
+    <mat-nav-list class="sidenav-submenu" *ngIf="showMenu">
+        <a mat-list-item> Submenu Item 1</a>
+        <a mat-list-item> Submenu Item 2</a>
+        <a mat-list-item> Submenu Item 3</a>
+        <a mat-list-item> Submenu Item 4</a>
+        <a mat-list-item> Submenu Item 5</a>
+        <a mat-list-item> Submenu Item 6</a>
+        <a mat-list-item> Submenu Item 7</a>
+        <a mat-list-item> Submenu Item 8</a>
+    </mat-nav-list>
+</mat-nav-list>
