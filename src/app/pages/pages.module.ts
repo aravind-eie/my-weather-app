@@ -6,6 +6,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MaterialModule } from '../material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { WeatherComponent } from './weather/weather.component';
+import { EnergyComponent } from './energy/energy.component';
+import { AlarmsComponent } from './alarms/alarms.component';
 
 
 @NgModule({
@@ -13,6 +16,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
+    WeatherComponent,
+    EnergyComponent,
+    AlarmsComponent,
   ],
   imports: [
     CommonModule,
